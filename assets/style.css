@@ -1,0 +1,9 @@
+body {
+    background-color: coral;
+}
+
+:root {
+    --primary-color: #E3D0D8; /* font */
+    --secondary-color: #604D53; /*background*/
+    --tertiary-color: #AEA3B0; /* accent color */
+}
