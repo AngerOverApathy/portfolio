@@ -1,9 +1,52 @@
 body {
-    background-color: coral;
-}
+    background-color: #604D53;
+    color: #E3D0D8;
+    font-family: Helvetica, Arial, sans-serif;
+  }
 
 :root {
     --primary-color: #E3D0D8; /* font */
     --secondary-color: #604D53; /*background*/
     --tertiary-color: #AEA3B0; /* accent color */
 }
+
+/* about me and nav bar styling */
+.container-1 {
+    display: flex;
+ } 
+
+
+/* about me */
+.about-me {
+   border: 2px var(--tertiary-color) dotted;
+    flex: 1;
+   width: 40%;
+   text-align: center;
+}
+
+/* img */
+.heroImage {
+    width: 10%
+}
+
+
+/* nav bar */
+.nav-bar {
+    width: 15%;
+    margin-left: 2%
+} 
+
+/* skills */
+.skills {
+
+}
+
+/* portfolio */
+.portfolio {
+    margin: auto;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    display: block;
+}
+
+/* resume */
