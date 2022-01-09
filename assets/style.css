@@ -1,54 +1,77 @@
-body {
-    background-color: #604D53;
-    color: #E3D0D8;
-    font-family: Helvetica, Arial, sans-serif;
-  }
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* custom properties */
 
 :root {
-    --primary-color: #E3D0D8; /* font */
-    --secondary-color: #604D53; /*background*/
+    --ff-primary: Georgia, serif;
+    --ff-secondary: Garamond, serif;
+
+    --primary-color: #604D53; /*font*/
+    --secondary-color: #e6d8de; /* background #E3D0D8 */ 
     --tertiary-color: #AEA3B0; /* accent color */
+
+    --fs-h1: 3rem;
+    --fs-h2: 2.25rem;
+    --fs-h3: 1.25rem;
 }
 
-/* about me and nav bar styling */
-.container-1 {
-    display: flex;
- } 
+section {
+    padding: 5rem 2rem;
+}
 
+img {
+    display: block;
+    left: 17rem;
+    max-width: 100%;
+    position: absolute;
+    top: 12rem;
+}
+
+h1, h2, h3 {
+    line-height: 1.1;
+    margin: 0;
+}
+
+body {
+    background-color: #fff;
+    color: var(--primary-color);
+    font-family: Georgia, Garamond, serif;
+  }
+
+/* intro */
+
+.intro {
+    position: relative;
+}
 
 /* about me */
-.about-me {
-   border: 2px var(--tertiary-color) dotted;
-    flex: 1;
-   width: 40%;
-   text-align: center;
-}
-
-/* img */
-.heroImage {
-    width: 10%
-}
-
-
-/* nav bar */
-.nav-bar {
-    width: 15%;
-    margin-left: 2%
-} 
-
-/* skills */
-.skills {
-
-}
-
-/* portfolio */
-.portfolio {
+.about-me h1 {
+    font-size: 3.5rem;
+    padding: 1.5rem 1.5rem 5rem 1.5rem;
     text-align: center;
-    margin: auto;
-    padding-top: 64px;
-    padding-bottom: 64px;
-    display: flex;
-    width: 80%;
 }
 
-/* resume */
+ .about-me p {
+    background: var(--tertiary-color);
+    color: var(--primary-color);
+    font-family: var(--ff-secondary); 
+    font-size: 2rem;
+    margin: 2rem;
+    padding: 3rem;
+    text-align: right;
+    width: 90%;
+ }
+
+ .about-me img {
+    box-shadow: 10px 10px 5px rgb(10, 10, 10, 0.5);
+    border-radius: 15px;
+    max-width: 40%;
+ }
+
+ /* nav bar */
+
+ 
