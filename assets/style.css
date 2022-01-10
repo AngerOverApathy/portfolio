@@ -110,16 +110,19 @@ body {
 }
 
 /*skills*/
- .skills h2 {
+.skills h2 {
+    display: block;
     font-size: 1.5rem;
     text-align: center;
-    display: block;
  }
 
  .skills ul {
-    list-style: none;
-    align-items: center;
-    display: inline-block;
+     align-items: center;
+     column-count: 3;
+     column-span: all;
+     column-width: 35%;
+     display: inline-block;
+     list-style: none;
  }
 
  /* my work */
@@ -134,7 +137,24 @@ body {
  .port-img {
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
-    text-align: center;
-    justify-content: space-around;
     grid-gap: 1rem;
+    justify-content: space-around;
+    text-align: center;
+ }
+
+ /* contact */
+ .contact h2 {
+     text-align: center;
+ }
+
+ .contact ul {
+    align-items: center;
+    column-count: 2;
+    column-span: all;
+    column-width: 100%;
+    display: inline-block;
+    list-style: none;
+    color: var(--primary-color);
+    text-shadow: 2px 2px 4px #000000;
+    font-size: 1.5rem;
  }
