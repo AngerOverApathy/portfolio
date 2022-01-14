@@ -98,11 +98,17 @@ body {
     margin-top: -20px;
 }
 
-.navbar ul li {
+.navbar ul li:not(:last-child) {
+    border-right: .5px solid black;
+    padding: 1rem 7rem 1rem 1rem;
+    margin-top: -.75rem;
+}
+
+/*.navbar ul li {
     border: .5px solid black;
     padding: 1rem;
     margin-top: -.75rem;
-}
+}*/
 
 .navbar a:hover {
     background-color: var(--secondary-color);
@@ -157,4 +163,10 @@ body {
     color: var(--primary-color);
     text-shadow: 2px 2px 4px #000000;
     font-size: 1.5rem;
+ }
+
+ @media screen and (max-width: 850px) {
+    .navbar {
+        height: fit-content !important;
+    }
  }
