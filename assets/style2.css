@@ -147,66 +147,60 @@ body {
   text-align: center;
   font-size: 28px;
   color: white;
-  margin: 15px;
+  margin: 15px 20px 15px 15px;
   padding: 15px;
+}
+
+#block {
+  height: 100%;
+  width: 100%;
+  justify-content: space-evenly;
 }
 
 .grid {
   display: grid;
   grid-gap: 20px;
-  grid-template-columns: repeat(3, fr);
-  grid-template-rows: 300px 300px 300px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-rows: 250px 250px 250px;
+  grid-auto-rows: 300px 300px 300px;
   justify-content: space-evenly;
   grid-template-areas: 
       " m1 m2 m3 "
       " m4 m5 m6 ";
 }
 
-#block {
-  background-color: #80C7FF;
-  height: 100%;
-  width: 100%;
-  color: #8CFF85;
-}
-
 .m1 {
   grid-area: m1;
-  justify-items: center;
-  align-content: space-evenly;
-  align-items: center;
-}
-
-#center {
-  justify-content: space-evenly;
-  justify-items: center;
-  align-content: space-evenly;
-  align-items: center;
+  margin-left: 25%;
+  margin-right: 15%;
 }
 
 .m2 {
   grid-area: m2;
-  justify-content: space-evenly;
-  justify-items: center;
-  align-content: space-evenly;
-  align-items: center;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 
 .m3 {
   grid-area: m3;
-  position: relative;
+  margin-left: 5%;
+  margin-right: 35%;
 }
 
 .m4 {
   grid-area: m4;
-  position: relative;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 
 .m5 {
   grid-area: m5;
-  position: relative;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 
 .m6 {
   grid-area: m6;
-  position: relative;
+  margin-left: 15%;
+  margin-right: 15%;
 }
