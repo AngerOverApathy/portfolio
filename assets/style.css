@@ -44,6 +44,10 @@ body {
   padding: 30px 150px;
 }
 
+.shadow {
+    text-shadow: 2px 2px 1px #401558;
+}
+
 .nav-bar {
   background: rgb(63,32,148);
   background: radial-gradient(circle, rgba(63,32,148,1) 0%, rgba(190,45,75,1) 100%);
@@ -213,7 +217,8 @@ body {
 /* contact */
 .contact {
   border: solid 3px rgb(240, 115, 156);
-  margin: 15px;
+  margin: 25px;
+  padding: 5px;
 }
 .contact-me {
   text-align: center;
@@ -222,3 +227,16 @@ body {
   margin: 15px 25px 15px 15px;
   padding: 15px 25px 15px 15px;
 }
+
+.options {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  color: white;
+  margin: 15px;
+}
+
+a { 
+  color: inherit; 
+  text-align: center;
+} 
