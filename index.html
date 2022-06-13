@@ -1,110 +1,100 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Jessica's Portfolio</title>
-<meta name="viewport" content="width=device-width,initial-scale=1"> 
-<link rel="stylesheet" href="./assets/style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./assets/style.css">
+
 </head>
 
 <body>
 
-<header></header>
-
-<!--about me-->
-
-<div class="intro">
-    <section class="about-me" id="about-me">
-    <h1>Hi, I'm Jessica Versoza</h1>
-    <p>I'm a front-end developer living in Sacramento, CA.</p>
-
-    <img src="assets/img/avatar.png" width="550" height="350" alt="a pixel avatar of Jessica V" />
-
-    </section>
-
+<!--intro banner-->
+ <div class="intro">
+    <div class="intro-container" id="starry">
+      <div class="dots">
+      <!-- <img src="assets/img/starry2.jpg" alt=""> -->
+      <h1>Hi, I'm Jessica</h1>
+      <h2>I'm a Sacramento-based front-end developer</h2>
+      </div>
+    </img>
+    </div>
+  </div>
 
 <!--nav bar-->
-
-<div class="navbar">
-<nav>
-    <ul>
-    <li>
-            <a href="#about-me">About Me</a>
-    </li>
-        <br />
-        <li>
-            <a href="#skills">Skills</a>
-        </li>
-        <br />
-        <li>
-            <a href="#portfolio">Portfolio</a>
-        </li>
-        <br />
-        <li>
-            <a href="assets/Resume.mht">Resume</a>
-        </li>
-        <br />
-        <li>
-            <a href="#contact">Contact</a>
-        </li>
-    </ul>
-</nav>
-</div>
+<div class="nav-bar">
+  <div class="color1" id="dot-border">
+    <a href="#about-me" style="text-decoration:none">About Me</a>
+  </div>
+      <br />
+  <div class="color2" id="dot-border">
+    <a href="#skills" style="text-decoration:none">Skills</a>
+  </div>
+      <br />
+  <div class="color3" id="dot-border">
+    <a href="#works" style="text-decoration:none">Works</a>
+  </div>
+      <br />
+  <div class="color4" id="dot-border">
+    <a href="assets/Resume.mht" style="text-decoration:none">Resume</a>
+  </div>
+      <br />
+  <div class="color5" id="dot-border">
+      <a href="#contact" style="text-decoration:none">Contact</a>
+  </div>
 </div>
 
-<!--skills-->
-<section class="skills" id="skills">
-    <h2><span>Skills</span></h2>
-    <ul>
-        <li>HTML</li>
-        <br />
-        <li>CSS</li>
-    </ul>
-    </section>
+<!-- about me -->
+<div class="about-me" id="about-me">
+  <div class="about-me-border">
+    <img src="assets/img/avatar.png" width="550" height="400" alt="a pixel avatar of Jessica V" class="avatar" />
+
+  <div class="my-info">
+    <h2>My name's Jess!</h2>
+    <p>I'm a Sacramento-based front-end developer.</p>
+    <p>Prior to entering the big exciting world of tech, I served the community as a respiratory therapist for nearly a decade.
+      Now, I'm thrilled to be on this new adventure, utilizing my new experience working with HTML, CSS, Javascript, Node.JS, Express, and React.
+    </p>
+  </div>
+
+  </div>
 </div>
 
-<!--container-2-->
+<!-- skills -->
+<div class="languages" id="skills">
+  <h2 class="skills">Skills:</h2>
+    <div class="skills-container">
+      <div class="skills-row"><a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5"><img src="assets/img/html.png" width="150" height="100" alt="html icon"></a></div>
+      <div class="skills-row"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS"><img src="assets/img/css.png" width="100" height="90" alt="css icon" style="margin-top: 15px"></a></div>
+      <div class="skills-row"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"><img src="assets/img/js.png" width="100" height="100" alt="js icon"></a></div>
+      <div class="skills-row"><a href="https://developer.mozilla.org/en-US/docs/Glossary/Node.js"><img src="assets/img/node.png" width="100" height="100" alt="node icon"></a></div>
+      <div class="skills-row"><a href="https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs"><img src="assets/img/Expressjs.png" width="150" height="100" alt="express icon"></a></div>
+      <div class="skills-row"><a href="https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/React_getting_started"><img src="assets/img/react.png" width="100" height="100" alt="mysql icon"></a></div>
+    </div>  
+</div>
 
-<section class= "portfolio" id="portfolio">
-    <h2>My Work</h2>
-    <p>Here is some of my latest work.</p>
+<!--works/projects-->
+<div class="works">
+  <h2 class="projects">My Projects:</h2>
+    <div class="grid">
+      <div class="m1" id="block"><a href="https://angeroverapathy.github.io/run-buddy/"><img src="assets/works/runbuddy.PNG" height="100%" width="70%" alt="a css-based landing page"></a></div>
+      <div class="m2" id="block"><a href="https://angeroverapathy.github.io/password-generator/"><img src="assets/works/passgen.PNG" height="100%" width="70%" alt="a javascript-based password generator"></a></div>
+      <div class="m3" id="block"><a href="https://angeroverapathy.github.io/team-generate/"><img src="assets/works/teamgen.png" height="100%" width="70%" alt="a node-based team generator profile"></a></div>
+      <div class="m4" id="block"><a href="https://angeroverapathy.github.io/express-yourself/"><img src="assets/works/exjs.png" height="100%" width="70%" alt="an express-based note taker app"></a></div>
+      <div class="m5" id="block"><a href="https://angeroverapathy.github.io/restaurant-roulette/"><img src="assets/works/roulette.png" height="100%" width="70%" alt="a front-end app to help you decide where to eat"></a></div>
+      <div class="m6" id="block"><a href="https://github.com/AngerOverApathy/handy-helper"><img src="assets/works/handy-helper.jpg" height="100%" width="70%" alt="handy helper app"></a></div>
+    </div>
+</div>  
 
-    <a href="#" class="port-img">
-        <a href="default.asp"><img src="assets/img/photo1.jpeg" width="350" height="300" alt="an outstretched hand and hot air baloons">
-    
-            <a href="default.asp"><img src="assets/images/photo2.jpg" width="350" height="300" alt="a mouse silhoutte">
-
-                <a href="default.asp"><img src="assets/images/photo3.jpg" width="350" height="300" alt="a galaxy">
-
-                    <a href="default.asp"><img src="assets/images/photo4.jpg" width="350" height="300" alt="lips with sprinkles">
-
-                        <a href="default.asp"><img src="assets/images/photo5.jpg" width="350" height="300" alt="mountains">
-
-                            <a href="default.asp"><img src="assets/images/photo6.jpg" width="350" height="300" alt="sunflowers">
-
-                                <a href="default.asp"><img src="assets/images/photo7.jpg" width="350" height="300" alt="a crystal ball">
-
-                                    <a href="default.asp"><img src="assets/images/photo8.jpeg" width="350" height="300" alt="a hummingbird">
-
-                                        <a href="default.asp"><img src="assets/images/photo9.jpg" width="350" height="300" alt="snowy mountains">
-
-                                            <a href="default.asp"><img src="assets/images/photo10.jpg" width="350" height="300" alt="a forest">
-
-    </a>       
-</section>
-
-<section class="contact" id="contact">
-<h2>Contact Me</h2>
-   <ul>
-    <li>
-    Phone: (916) 995-9874
-    </li>
-    <br />
-    <li>
-    Email: jfverse@gmail.com
-    </li>
-    </ul>
-</section>
+<!--contact section-->
+<div class="contact">
+  <h2 class="contact-me">Contact Me!</h2>
+    <div class="options">
+      
+    </div>
+</div>
 
 
 </body>
+<script src="script.js"></script>
 </html>
